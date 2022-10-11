@@ -1,0 +1,241 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  position: relative;
+  opacity: 0.9;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("./imgs/a-day3-0.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("./imgs/a-day3-1.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("./imgs/a-day3-2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("./imgs/a-day3-3.jpg");
+  min-height: 400px;
+}
+
+.bgimg-5 {
+  background-image: url("./imgs/a-day3-4.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.caption span.title1 {
+  background: #f5ab29 ;
+  color: #0a4424;
+  text-shadow: 1px 1px whitesmoke;
+  font-style: bold;
+  font-weight: 600;
+  font-family: Raleway;
+  opacity: 0.8;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  position: relative;
+  animation: text 3s 1;
+}
+
+.date h4{
+	color: #fff;
+	text-shadow: 1px 1px black;
+	font-style: italic;
+	border-top: -20%;
+}
+
+@keyframes text{
+	0%{
+		color: black;
+		margin-bottom: -40px;
+	}
+	30%{
+		letter-spacing: 25px;
+		margin-bottom: -40px;
+	}
+	85%{
+		letter-spacing: 8px;
+		margin-bottom: -40px;
+	}
+}
+
+h3 {
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: Times New Roman;
+  font-size: 20px;
+  color: #111;
+}
+
+#place {
+  font-style: italic;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    background-attachment: scroll;
+  }
+}
+
+p {
+	text-indent: 5%;
+}
+
+.content {
+	position: relative;
+}
+
+.lcontent {
+	color: #777;
+	background-color: whitesmoke;
+	text-align:center;
+	padding:50px 80px;
+	text-align: justify; 
+}
+
+.dcontent {
+	color:#ddd;
+	background-color:#282E34;
+	text-align:center;
+	padding:50px 80px;
+	text-align: justify; 
+}
+
+#menu{
+	padding-left: 1%;
+	margin-top: -1%;
+	z-index: 2;
+	position: fixed;
+	color: #f5ab29;
+	text-shadow: 3px 3px #0a4424;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0a4424;
+  background-image: url("./imgs/wfflogo.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f5ab29;
+  text-shadow: 2px 2px #751518;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+#navbar {
+  overflow: hidden;
+  background-color: #751518;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+  height: 10%;
+}
+
+#navbar a {
+  display: block;
+  color: #f5ab29;
+  text-shadow: 3px 3px #0a4424;
+  text-align: center;
+  padding: 0;
+  text-decoration: none;
+  font-size: 250%;
+  font-family: Latone;
+}
+
+#navbar a:hover {
+  background-color: #0a4424;
+  color: #f5ab29;
+  text-shadow: 3px 3px #751518;
+}		
+
+.pagination {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: #0a4424;
+  margin: 0 auto;
+  padding-top: 1.5%;
+  padding-bottom: 1%;
+}
+
+.goto {
+	display: inline-block;
+	padding-right: 2%;
+	color: #f5ab29;
+	text-shadow: 2px 2px maroon;
+}
+
+.pagination a {
+  color: #f5ab29;
+  padding: 6px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #751518;
+  color: #f5ab29;
+}
+
+.pagination a:hover:not(.active) {background-color: #4CAF50;}
