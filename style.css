@@ -1,97 +1,100 @@
-body #myCarousel .carousel-inner .item .bot{
-	margin: 0;
-	padding: 0;
-	height: 100vh;
-	width: 100%;
-	overflow-x: hidden;	
+body #myCarousel .carousel-inner .item .bot {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-#inner{
-	z-index: 1;
+#inner {
+  z-index: 1;
 }
 
-img{
-	background-size: cover;
-	background-position: center;
-	background-repeat: no repeat;
-	position: relative;
+img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no repeat;
+  position: relative;
 }
 
-
-.top{
-	display: table-cell;
-	width: 80%;
-    position: fixed;
-    top: 5%;
-    left: 10%;
-	vertical-align: middle;
+.top {
+  display: table-cell;
+  width: 80%;
+  position: fixed;
+  top: 5%;
+  left: 10%;
+  vertical-align: middle;
 }
 
-.carousel-inner .item .bot{
-	-webkit-animation: thing 20s;
-	-o-animation: thing 20s;
-	animation: thing 20s;
+.carousel-inner .item .bot {
+  -webkit-animation: thing 20s;
+  -o-animation: thing 20s;
+  animation: thing 20s;
 }
 
 @keyframes thing {
-	from{transform: scale(1, 1);}
-	to{transform: scale(1.5, 1.5);}
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
 }
 
 .carousel-caption {
-	background: rgba(0, 0, 0, 0.5);
-    position: fixed;
-	top: 20%;
-	height: 20%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 20%;
+  height: 20%;
 }
 
 .carousel-caption h1 {
-	margin: -0.05%;
-	padding: -0.05%;
-	font-family: Latone Regular;
-	font-size: 5em;
-	text-shadow: 1px 1px white;
-	color: #f5ab29 !important;
+  margin: -0.05%;
+  padding: -0.05%;
+  font-family: Latone Regular;
+  font-size: 5em;
+  text-shadow: 1px 1px white;
+  color: #f5ab29 !important;
 }
 
 .carousel-caption #suptitle {
-	margin:0 auto;
-	font-family: Lato;
-	font-size: 1em;
-/**	text-shadow: 2px 2px #751518;**/
-	color: #f5ab29 !important;
-	background-color: #0a4424;
-	opacity: 0.8;
+  margin: 0 auto;
+  font-family: Lato;
+  font-size: 1em;
+  /**	text-shadow: 2px 2px #751518;**/
+  color: #f5ab29 !important;
+  background-color: #0a4424;
+  opacity: 0.8;
 }
 .carousel-caption #subtitle {
-	margin-top: 0;
-	padding-top: 0;
-	font-family: Garamond;
-	font-size: 1.5em;
-	text-shadow: 2px 2px black;
-	font-style: italic;
-	color: #f5ab29 !important;
-	background-color: #751518;
-	opacity: 0.8;
+  margin-top: 0;
+  padding-top: 0;
+  font-family: Garamond;
+  font-size: 1.5em;
+  text-shadow: 2px 2px black;
+  font-style: italic;
+  color: #f5ab29 !important;
+  background-color: #751518;
+  opacity: 0.8;
 }
 
 .carousel-caption h3 {
-	margin-top: 30%;
-	font-family: Khalid Personal Regular;
-	font-size: 4em;
-	text-shadow: 1px 1px white;
-	opacity: 0.75;
-	color: #f5ab29 !important;
+  margin-top: 30%;
+  font-family: Khalid Personal Regular;
+  font-size: 4em;
+  text-shadow: 1px 1px white;
+  opacity: 0.75;
+  color: #f5ab29 !important;
 }
 
-#menu{
-	padding-left: 83%;
-	text-shadow: 1px 1px white;
-	margin-top: 5%;
-	z-index: 2;
-	color: #f5ab29;
-	font-size: 3.5em;
-	position: fixed;
+#menu {
+  padding-left: 83%;
+  text-shadow: 1px 1px white;
+  margin-top: 5%;
+  z-index: 2;
+  color: #f5ab29;
+  font-size: 3.5em;
+  position: fixed;
 }
 
 .sidenav {
@@ -108,7 +111,7 @@ img{
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
-  text-align:center;
+  text-align: center;
 }
 
 .sidenav a {
@@ -119,10 +122,9 @@ img{
   text-shadow: 2px 2px #751518;
   display: block;
   transition: 0.3s;
-
 }
 
-.sidenav a:hover{
+.sidenav a:hover {
   color: #f1f1f1;
 }
 
@@ -135,8 +137,12 @@ img{
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 .des {
@@ -190,29 +196,29 @@ img{
 }
 
 #ref {
-	font-style: italic;
+  font-style: italic;
 }
 
 #logo {
-	width: 150px;
-	height: 150px;
-	margin-left: 80%;
-	margin-top: -5%;
+  width: 150px;
+  height: 150px;
+  margin-left: 80%;
+  margin-top: -5%;
 }
 
-@keyframes text{
-	0%{
-		color: black;
-		margin-bottom: -40px;
-	}
-	30%{
-		letter-spacing: 25px;
-		margin-bottom: -40px;
-	}
-	85%{
-		letter-spacing: 8px;
-		margin-bottom: -40px;
-	}
+@keyframes text {
+  0% {
+    color: black;
+    margin-bottom: -40px;
+  }
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
 }
 
 .des a {
@@ -224,7 +230,7 @@ img{
   transition: 0.3s;
 }
 
-.des a:hover{
+.des a:hover {
   color: #f1f1f1;
 }
 
@@ -238,6 +244,10 @@ img{
 }
 
 @media screen and (max-height: 450px) {
-  .des {padding-top: 15px;}
-  .des a {font-size: 18px;}
+  .des {
+    padding-top: 15px;
+  }
+  .des a {
+    font-size: 18px;
+  }
 }
